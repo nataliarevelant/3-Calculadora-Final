@@ -70,7 +70,6 @@ let optionRace = document.querySelector( '.option-02 > select' )
 
 let output = document.querySelector( '#info-grid > .info > .result' )
 
-
 // Ouvir o evento de mudança para disparar a funcão “calculate”
 optionGender.addEventListener( 'change', calculate )
 optionRace.addEventListener( 'change', calculate )
