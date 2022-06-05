@@ -64,20 +64,23 @@ let results = [
 
   ]
 
-let optionGender = document.querySelectorAll( '.option-01 > select > option' )
+let optionGender = document.querySelector( '.option-01 > select' )
 
-let optionRace = document.querySelectorAll( '.option-02 > select > option' )
-
-console.log(optionGender)
+let optionRace = document.querySelector( '.option-02 > select' )
 
 let output = document.querySelector( '#info-grid > .info > .result' )
 
 
+// Ouvir o evento de mudança para disparar a funcão “calculate”
+optionGender.addEventListener( 'change', calculate )
+optionRace.addEventListener( 'change', calculate )
+
 function calculate() {
 
     for (let result of results) {
-    
-        if ( optionGender == result.genero('Mulher') && optionRace == result.raça('Parda')) {
+
+        // comparar o valor do seletor com as propriedades dos dados
+        if ( optionGender.value == result.genero && optionRace.value == result.raça ) {
 
         let quantil = result.quantil
         show( quantil )
