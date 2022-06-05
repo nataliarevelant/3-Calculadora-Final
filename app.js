@@ -64,9 +64,11 @@ let results = [
 
   ]
 
-let optionGender = document.querySelector( '.option-01 > select' )
+let optionGender = document.querySelectorAll( '.option-01 > select > option' )
 
-let optionRace = document.querySelector( '.option-02 > select' )
+let optionRace = document.querySelectorAll( '.option-02 > select > option' )
+
+console.log(optionGender)
 
 let output = document.querySelector( '#info-grid > .info > .result' )
 
