@@ -1,0 +1,34 @@
+* {
+    font-family: Inter, sans-serif;
+}
+
+h3, .option-01, .option-02, #result, hr {
+    width: 450px;
+}
+
+/* .background {
+    position: relative;
+}
+
+.background > img {
+    position: absolute;
+}
+*/
+
+.info-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.empty-space {
+    grid-column: 1 / 2;
+}
+
+div.info {
+    grid-column: 2 / 3;
+}
+
+hr {
+    width: 100%;
+}
